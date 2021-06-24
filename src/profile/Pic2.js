@@ -1,8 +1,8 @@
 
-const Pic2 = (props) => {
+const Pic2 = ({ children }) => {
     return (
         <div>
-            {props.children}
+            {children}
         </div>
     )
 }

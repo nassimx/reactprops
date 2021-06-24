@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-const MyProfile = (props) => {
+const MyProfile = ({ name, bio, profession, msg, children }) => {
     return (
         <div>
-            <h1> {props.name}</h1>
-            <h3>{props.bio}</h3>
-            <h5>{props.profession}</h5>
+            {children}
+            <h1> {name}</h1>
+            <h3>{bio}</h3>
+            <h5>{profession}</h5>
+            <h4>{msg}</h4>
         </div>
     )
 }
@@ -19,4 +21,8 @@ MyProfile.propTypes = {
     profession: PropTypes.string,
     handleName: PropTypes.func
 
+}
+
+MyProfile.defaultProps = {
+    msg: "good luck"
 }

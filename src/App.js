@@ -36,11 +36,11 @@ function App() {
 
 
       <MyProfile name={name} bio={bio} profession={profession} >
-
+        <h1 style={{ color: "red" }}>Hello</h1>
       </MyProfile>
 
       <Pic2>
-        <img src="https://thumbs.dreamstime.com/b/goodbye-written-sand-coast-78677330.jpg" alt="GoodBye" />
+        <img src="https://www.floridacamcourses.com/wp-content/themes/yootheme/cache/firing-a-client-1f93dcf7.jpeg" alt="GoodBye" />
       </Pic2>
 
 
@@ -49,3 +49,6 @@ function App() {
 }
 
 export default App;
+
+
+//* This is a little note to let you know just how helpful you have been.   *//
